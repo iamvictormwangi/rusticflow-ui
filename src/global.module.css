@@ -1,0 +1,437 @@
+/* Rustic UI */
+/* components */
+
+.alert {
+  min-height: 3rem;
+  min-width: 10rem;
+  z-index: 1500;
+  opacity: 0.85
+}
+
+.avatar {
+  border-radius: 50%;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  aspect-ratio: 1
+}
+
+.avatar * {
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 0
+}
+
+.box {
+  width: 100%;
+  display: inline-block;
+  min-height: 3rem
+}
+
+.box__group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  position: relative
+}
+
+.box__group__item,
+.box__group,
+.box__group .box__group__item {
+  margin: 0
+}
+
+.btn {
+  border: var(--border-color, black) var(--border-style, solid) var(--border-width, 1.15px);
+  cursor: pointer;
+  text-align: center;
+  font-family: var(--sans-serif, sans-serif);
+  padding: 0.5rem 0.75rem
+}
+
+.btn__floating {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding: 0;
+  cursor: pointer;
+  vertical-align: middle
+}
+
+.btn__cta {
+  padding: 2.5rem 4rem
+}
+
+.carousel {
+  position: relative;
+  min-height: 50vh;
+  width: 100%
+}
+
+.dropdown__relative {
+  position: relative
+}
+
+.dropdown,
+.dropdown__relative,
+.dropdown__relative .dropdown {
+  position: absolute;
+  z-index: 1500;
+  min-width: 10rem;
+  top: calc(100% + 0.45rem);
+  right: 0
+}
+
+.footer>* {
+  margin-bottom: 0
+}
+
+.group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  align-items: stretch
+}
+
+.group [data-role-group-item],
+.group .item {
+  margin-bottom: 0
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20rem;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+.list {
+  position: relative
+}
+
+.list .item {
+  padding-top: 0.35rem;
+  padding-bottom: 0.35rem
+}
+
+.message {
+  min-width: 10rem
+}
+
+.modal {
+  position: absolute;
+  min-width: 10rem;
+  min-height: 6rem;
+  z-index: 1500;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.notepad {
+  border-left: 0.6rem solid black;
+  border-top-left-radius: 0.7rem;
+  border-bottom-left-radius: 0.7rem;
+  min-height: 3em;
+  padding: 0.5rem 0.5rem 0.75rem
+}
+
+.notification {
+  min-height: 3rem;
+  min-width: 10rem;
+  position: absolute;
+  position: fixed;
+  top: 3rem;
+  right: 1rem;
+  z-index: 1500;
+  opacity: 0.85
+}
+
+.notification__group {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  position: fixed;
+  top: 3rem;
+  right: 1rem
+}
+
+.notification__group .notification {
+  min-height: 3rem;
+  min-width: 10rem;
+  z-index: 1500;
+  opacity: 0.85
+}
+
+.pagination {
+  list-style: none;
+  display: flex;
+  flex-direction: row
+}
+
+.pagination .pagination__item {
+  margin: 0 0.08rem
+}
+
+.panel * {
+  margin-bottom: 0;
+  z-index: 1000
+}
+
+.panel.panel__sticky {
+  position: sticky;
+  top: 0;
+  width: 100%
+}
+
+.panel.panel__fixed {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.panel .content,
+.footer .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between
+}
+
+.parallax {
+  height: 500px;
+  overflow: hidden;
+  position: relative
+}
+
+.parallax .content {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10
+}
+
+.preloader {
+  position: absolute;
+  display: block;
+  z-index: 1000;
+  background-color: black;
+  height: 150vh;
+  width: 150vw;
+  overflow: hidden
+}
+
+.progress {
+  background-color: rgb(219, 213, 213);
+  width: 15rem;
+  height: 2rem;
+  border: var(--border-style, solid) var(--border-width, 1.15px) var(--border-color, black)
+}
+
+.progress .progress__meter {
+  width: 15%;
+  height: 100%;
+  background-color: black
+}
+
+table,
+.table {
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  border-spacing: 0
+}
+
+table caption,
+.table caption {
+  padding: 0.5rem 0rem
+}
+
+table thead th,
+.table thead th {
+  border: 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  border-spacing: 0;
+  text-align: left
+}
+
+table tr,
+.table tr {
+  margin-bottom: 0.5rem;
+  border: none;
+  border-spacing: 0
+}
+
+table tr th:not(last-child),
+table tr td:not(last-child),
+.table tr th:not(last-child),
+.table tr td:not(last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 16px;
+  vertical-align: inherit
+}
+
+table tr tr:last-child th,
+.table tr tr:last-child th {
+  border-bottom: 0
+}
+
+table tr tr:last-child tr,
+.table tr tr:last-child tr {
+  border-bottom: 0
+}
+
+table td,
+.table td {
+  border: none
+}
+
+table tfoot tr,
+.table tfoot tr {
+  text-align: left;
+  border-spacing: 0
+}
+
+table tfoot td,
+.table tfoot td {
+  color: rgba(0, 0, 0, 0.6);
+  padding: 1rem 4px
+}
+
+table:last-child,
+.table:last-child {
+  border-bottom: 0
+}
+
+table tr:hover,
+.table tr:hover {
+  opacity: 90%
+}
+
+table.table__striped tr:nth-of-type(odd),
+.table.table__striped tr:nth-of-type(odd) {
+  background-color: lightgrey
+}
+
+table.table__striped tr:nth-of-type(odd),
+.table.table__striped tr:nth-of-type(odd) {
+  width: 100%
+}
+
+table tr.highlight,
+.table tr.highlight {
+  background-color: lightgrey
+}
+
+.toggler {
+  position: absolute;
+  font-weight: 900;
+  font-size: 1.25rem;
+  right: 0.8rem;
+  top: 0.6rem;
+  cursor: pointer;
+  content: "x";
+  color: red
+}
+
+.toggler:hover {
+  opacity: 0.95
+}
+
+.tooltip {
+  position: absolute;
+  visibility: hidden;
+  z-index: 400;
+  bottom: 4rem
+}
+
+.tooltip.active {
+  font-size: 0.85rem
+}
+
+.tooltip.active {
+  visibility: visible
+}
+
+.content {
+  padding: 0.5rem 0.65rem
+}
+
+input[type=checkbox],
+input[type=radio] {
+  margin-right: 1rem
+}
+
+.select,
+select,
+input[type=text],
+input[type=password],
+input[type=email],
+.input,
+textarea,
+button {
+  padding: 0.5rem;
+  border: var(--border-style, solid) var(--border-width, 1.15px) var(--border-color, black)
+}
+
+button,
+.btn {
+  border: var(--border-color, black) var(--border-style, solid) var(--border-width, 1.15px);
+  cursor: pointer;
+  text-align: center;
+  font-family: var(--sans-serif, sans-serif);
+  padding: 0.5rem 0.75rem
+}
+
+.btn__floating {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding: 0;
+  cursor: pointer;
+  vertical-align: middle
+}
+
+.btn__cta {
+  padding: 2.5rem 4rem
+}
+
+.input,
+.textarea {
+  border-radius: 4px;
+}
+
+.textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  resize: none;
+}
+
+.input {
+  max-width: 190px;
+  padding: .15rem .5rem;
+  min-height: 40px;
+  outline: none;
+  line-height: 1.15;
+}

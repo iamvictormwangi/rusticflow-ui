@@ -1,0 +1,30 @@
+# RusticFlow Components
+
+pnpm run rollup --bundleConfigAsCjs
+
+## Simple Components
+
+Alert
+Avatar
+Box
+Dropdown
+Footer
+Group
+Hero
+List
+Message
+Modal
+Notepad
+Notification
+Panel
+Parallax
+Table
+Carousel
+Pagination
+Progress
+Mask
+
+## Slightly Components (ones with events)
+
+Button
+Tooltip
