@@ -23,3 +23,4 @@ export { default as RfTable } from "./Table";
 export { default as RfText } from "./Text";
 export { default as RfTextarea } from "./Textarea";
 export { default as RfTooltip } from "./Tooltip";
+export { default as RfWrapper } from "./Wrapper";

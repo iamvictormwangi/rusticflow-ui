@@ -28,6 +28,7 @@
   - [Table](#table)
   - [Textarea](#textarea)
   - [Tooltip](#tooltip)
+  - [Wrapper](#wrapper)
 
 ## Install
 
